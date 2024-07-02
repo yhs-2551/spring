@@ -35,7 +35,7 @@ public class EmployeeMapper {
 
     public Employee findById(int employeeId) {
         SqlSession session = MyBatisUtil.getSessionFactory().openSession();
-        Employee employee = (Employee) session.selectOne("findById", employeeId);
+        Employee employee = session.selectOne("findById", employeeId);
         session.commit();
         session.close();
         return employee;
