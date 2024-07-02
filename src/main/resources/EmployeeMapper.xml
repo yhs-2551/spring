@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yhs.portfolio.smcrudemployee.dao.EmployeeMapper">
+
+    <resultMap id="result" type="employee">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="gender" column="gender"/>
+        <result property="hobbies" column="hobbies"/>
+        <result property="address" column="address"/>
+    </resultMap>
+    <!--mybatis-config.xml에서 alias로 지정한 값을 resultType에 넣는다-->
+    <select id="getAllEmployees" resultType="employee" resultMap="result">
+        select * from employee;
+    </select>
+
+    <insert id="insertEmployee" parameterType="employee" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO employee(name, email, gender, hobbies, address) values (#{name}, #{email}, #{gender}, #{hobbies}, #{address});
+    </insert>
+
+    <delete id="deleteEmployee" parameterType="int">
+        DELETE FROM employee where id = #{employeeId}
+    </delete>
+
+    <select id="findById" parameterType="int" resultType="employee" resultMap="result">
+        select * from employee where id = #{employeeId}
+    </select>
+
+    <select id="updateEmployee" parameterType="employee">
+        update employee set name = #{name}, email = #{email}, gender = #{gender}, hobbies = #{hobbies}, address = #{address} where id = #{id}
+    </select>
+</mapper>
