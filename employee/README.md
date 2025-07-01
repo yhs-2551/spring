@@ -1,6 +1,6 @@
-# Spring, Mybatis, JSP 기반 간단 직원 관리 앱 (연습)
+# Spring, Mybatis, JSP 기반 간단 직원 관리 앱
 
-Spring, Mybatis, JSP를 활용한 직원 관리 앱 연습
+Spring, Mybatis, JSP를 활용한 직원 관리 앱 실습
 
 ## 기술 스택
 

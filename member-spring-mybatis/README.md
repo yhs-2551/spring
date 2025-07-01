@@ -1,6 +1,6 @@
-# Spring, Mybatis, JSP를 활용한 회원 관리 시스템 (연습)
+# Spring, Mybatis, JSP를 활용한 회원 관리 시스템  
 
-Spring, Mybatis, JSP를 활용한 회원 관리 시스템 연습 프로젝트
+Spring, Mybatis, JSP를 활용한 회원 관리 시스템 실습 프로젝트
 
 ## 기술 스택
 

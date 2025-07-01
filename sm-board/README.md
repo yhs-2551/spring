@@ -1,6 +1,6 @@
-# Spring, Mybatis, JSP를 활용한 게시판 (연습)
+# Spring, Mybatis, JSP를 활용한 게시판
 
-Spring, Mybatis, JSP를 활용한 게시판 연습 프로젝트
+Spring, Mybatis, JSP를 활용한 게시판 실습 프로젝트
 
 ## 기술 스택
 
